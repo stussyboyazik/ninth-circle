@@ -1,0 +1,435 @@
+@media only screen and (max-width: 1440px) and (min-width: 769px) {
+  .castle {
+    .tower {
+      &1 {
+        .battlement {
+          width: 240px;
+        }
+        .wall {
+          width: 200px;
+        }
+      }
+      &2 {
+        .roof {
+          border-left: 209px solid transparent;
+          border-right: 209px solid transparent;
+        }
+        .wall {
+          width: 318px;
+          height: 476px;
+        }
+      }
+      &3 {
+        .wall {
+          height: 331px;
+        }
+      }
+      &4 {
+        .wall {
+          height: 437px;
+        }
+      }
+      &5 {
+        .roof {
+          border-left: 152px solid transparent;
+          border-right: 152px solid transparent;
+        }
+        .wall {
+          width: 246px;
+          height: 271px;
+        }
+      }
+      &6 {
+        .battlement {
+          width: 240px;
+        }
+        .wall {
+          width: 200px;
+        }
+      }
+    }
+    .foundation {
+      .door {
+        img {
+          width: 90%;
+          height: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 769px) {
+  .castle {
+    .tower {
+      &1 {
+        .battlement {
+          width: 210px;
+        }
+        .wall {
+          width: 171px;
+        }
+      }
+      &2 {
+        .roof {
+          border-left: 199px solid transparent;
+          border-right: 199px solid transparent;
+          border-bottom: 155px solid #000000;
+          .text {
+            top: 90px;
+          }
+        }
+        .wall {
+          width: 280px;
+          height: 425px;
+          z-index: 1;
+        }
+      }
+      &3 {
+        .roof {
+          border-left: 145px solid transparent;
+          border-right: 145px solid transparent;
+        }
+        .wall {
+          width: 230px;
+          height: 280px;
+        }
+      }
+      &4 {
+        .roof {
+          border-left: 185px solid transparent;
+          border-right: 185px solid transparent;
+          border-bottom: 150px solid #000000;
+        }
+        .wall {
+          width: 280px;
+          height: 400px;
+        }
+      }
+      &5 {
+        .roof {
+          border-left: 140px solid transparent;
+          border-right: 140px solid transparent;
+        }
+        .flag {
+          border-top: 70px solid transparent;
+          border-left: 250px solid #000000;
+          border-bottom: 70px solid transparent;
+        }
+        .shaft {
+          height: 200px;
+        }
+        .logo {
+          right: 150px;
+        }
+        .wall {
+          width: 230px;
+          height: 257px;
+        }
+      }
+      &6 {
+        margin-left: -90px;
+        .battlement {
+          width: 210px;
+        }
+        .wall {
+          width: 171px;
+        }
+      }
+    }
+    .foundation {
+      .door {
+        height: 100%;
+        img {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1210px) and (min-width: 769px) {
+  .castle {
+    .tower {
+      &2 {
+        margin-left: -180px;
+      }
+      &3 {
+        margin-left: -180px;
+        .roof {
+          border-left: 135px solid transparent;
+          border-right: 135px solid transparent;
+        }
+        .wall {
+          width: 215px;
+          height: 270px;
+        }
+      }
+      &4 {
+        margin-left: -120px;
+        .roof {
+          border-left: 176px solid transparent;
+          border-right: 176px solid transparent;
+        }
+        .wall {
+          width: 270px;
+        }
+      }
+      &5 {
+        .flag {
+          border-left: 210px solid #000000;
+        }
+        .logo {
+          right: 130px;
+        }
+      }
+      &6 {
+        margin-left: -125px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1014px) {
+  .castle {
+    display: none;
+  }
+  .castle__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .castle__mobile {
+    .tower {
+      &1 {
+        .battlement {
+          width: 120px;
+          height: 30px;
+        }
+        .wall {
+          width: 100px;
+          height: 60px;
+        }
+      }
+      &2 {
+        margin-left: -120px;
+        .roof {
+          border-left: 112px solid transparent;
+          border-right: 112px solid transparent;
+          border-bottom: 110px solid #000000;
+          .horn1 {
+            &.active {
+              border-bottom: 110px solid #000000;
+              border-right: 70px solid transparent;
+            }
+          }
+          .horn2 {
+            &.active {
+              border-bottom: 110px solid #000000;
+              border-left: 70px solid transparent;
+            }
+          }
+          .text {
+            top: 70px;
+            font-size: 15px;
+            width: 130px;
+          }
+        }
+        .wall {
+          width: 190px;
+          height: 570px;
+          .window {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .wall__foundation {
+          width: 190px;
+        }
+      }
+      &4 {
+        margin-left: -110px;
+        .roof {
+          border-left: 90px solid transparent;
+          border-right: 90px solid transparent;
+          border-bottom: 120px solid #000000;
+          .pictogram {
+            margin-top: 40px;
+          }
+        }
+        .wall {
+          width: 120px;
+          height: 375px;
+          .window {
+            img {
+              display: none;
+            }
+            &:nth-child(odd) {
+              margin-right: 0;
+            }
+            &:nth-child(even) {
+              margin-left: 0;
+            }
+          }
+          .w4 {
+            display: none;
+          }
+        }
+      }
+      &5 {
+        margin-left: -110px;
+        .roof {
+          border-left: 112px solid transparent;
+          border-right: 112px solid transparent;
+          border-bottom: 90px solid #000000;
+          .horn1 {
+            &.active {
+              border-bottom: 90px solid #000000;
+              border-right: 70px solid transparent;
+            }
+          }
+          .horn2 {
+            &.active {
+              border-bottom: 90px solid #000000;
+              border-left: 70px solid transparent;
+            }
+          }
+        }
+        .flag {
+          left: 10px;
+          border-top: 45px solid transparent;
+          border-left: 100px solid #000000;
+          border-bottom: 45px solid transparent;
+        }
+        .shaft {
+          width: 10px;
+        }
+        .logo {
+          right: 55px;
+        }
+        .wall {
+          width: 190px;
+          height: 435px;
+          .window {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .wall__foundation {
+          width: 190px;
+        }
+      }
+      &6 {
+        margin-left: -120px;
+        .battlement {
+          width: 120px;
+          height: 30px;
+        }
+        .wall {
+          width: 100px;
+          height: 60px;
+        }
+      }
+    }
+    .foundation {
+      .door__mobile {
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 407px) {
+  .castle__mobile {
+    .tower {
+      &2 {
+        .roof {
+          border-left: 95px solid transparent;
+          border-right: 95px solid transparent;
+          border-bottom: 110px solid #000000;
+          .horn1 {
+            &.active {
+              border-bottom: 110px solid #000000;
+              border-right: 60px solid transparent;
+            }
+          }
+          .horn2 {
+            &.active {
+              border-bottom: 110px solid #000000;
+              border-left: 60px solid transparent;
+            }
+          }
+          .text {
+            font-size: 13px;
+            width: 120px;
+          }
+        }
+        .wall {
+          width: 150px;
+          height: 435px;
+        }
+        .wall__foundation {
+          width: 170px;
+        }
+      }
+      &4 {
+        margin-left: -100px;
+        .wall {
+          width: 120px;
+          height: 285px;
+          .window {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      &5 {
+        margin-left: -100px;
+        .roof {
+          border-left: 95px solid transparent;
+          border-right: 95px solid transparent;
+          border-bottom: 90px solid #000000;
+          .horn1 {
+            &.active {
+              border-bottom: 90px solid #000000;
+              border-right: 60px solid transparent;
+            }
+          }
+          .horn2 {
+            &.active {
+              border-bottom: 90px solid #000000;
+              border-left: 60px solid transparent;
+            }
+          }
+        }
+        .flag {
+          border-left: 90px solid #000000;
+        }
+        .logo {
+          right: 46px;
+        }
+        .wall {
+          width: 150px;
+          height: 315px;
+        }
+        .wall__foundation {
+          width: 170px;
+        }
+      }
+    }
+    .foundation {
+      .door__mobile {
+        img {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+  }
+}

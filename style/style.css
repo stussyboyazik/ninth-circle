@@ -1,0 +1,1062 @@
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 1980px;
+  height: 100%;
+  background-color: #5B0F0F;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100%;
+}
+
+.castle .tower {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 -20px;
+}
+.castle .tower1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.castle .tower1 .battlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 250px;
+  height: 70px;
+}
+.castle .tower1 .battlement__big {
+  width: 50px;
+  height: 70px;
+  background: #000000;
+}
+.castle .tower1 .battlement__small {
+  width: 50px;
+  height: 30px;
+  background: #000000;
+}
+.castle .tower1 .wall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 210px;
+  height: 86px;
+  background: #000000;
+}
+.castle .tower1 .wall .window {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  background: #E1B000;
+  justify-content: flex-end;
+}
+.castle .tower1 .wall .window img {
+  display: none;
+}
+.castle .tower2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -120px;
+  margin-top: 7px;
+}
+.castle .tower2 .roof {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 220px solid transparent;
+  border-right: 220px solid transparent;
+  border-bottom: 185px solid #000000;
+}
+.castle .tower2 .roof .horn1.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 185px solid #000000;
+  border-right: 120px solid transparent;
+}
+.castle .tower2 .roof .horn2.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 185px solid #000000;
+  border-left: 120px solid transparent;
+}
+.castle .tower2 .roof .text {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%);
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 180px;
+  text-align: center;
+}
+.castle .tower2 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 335px;
+  height: 525px;
+  background: #232323;
+}
+.castle .tower2 .wall .window {
+  width: 67px;
+  height: 65px;
+  display: flex;
+  background: #E1B000;
+  justify-content: center;
+}
+.castle .tower2 .wall .window img {
+  display: none;
+}
+.castle .tower2 .wall .w1.active {
+  background-color: #000000;
+}
+.castle .tower2 .wall .w2.active {
+  background-color: #000000;
+}
+.castle .tower3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -130px;
+  z-index: 2;
+}
+.castle .tower3 .roof {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 165px solid transparent;
+  border-right: 165px solid transparent;
+  border-bottom: 138px solid #000000;
+}
+.castle .tower3 .roof img {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%);
+}
+.castle .tower3 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+  width: 255px;
+  height: 364px;
+}
+.castle .tower3 .wall .window {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  background: #E1B000;
+  justify-content: flex-end;
+}
+.castle .tower3 .wall .window img {
+  display: none;
+}
+.castle .tower4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -110px;
+}
+.castle .tower4 .roof {
+  display: flex;
+  justify-content: space-around;
+  width: 0;
+  height: 0;
+  border-left: 195px solid transparent;
+  border-right: 195px solid transparent;
+  border-bottom: 172px solid #000000;
+}
+.castle .tower4 .roof .horn1.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 172px solid #000000;
+  border-right: 110px solid transparent;
+}
+.castle .tower4 .roof .horn2.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 172px solid #000000;
+  border-left: 110px solid transparent;
+}
+.castle .tower4 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 298px;
+  height: 480px;
+  background: #302929;
+}
+.castle .tower4 .wall .window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background: #E1B000;
+}
+.castle .tower4 .wall .window img {
+  display: none;
+}
+.castle .tower4 .wall .window:nth-child(odd) {
+  margin-right: 76px;
+}
+.castle .tower4 .wall .window:nth-child(even) {
+  margin-left: 76px;
+}
+.castle .tower4 .wall .w1.active {
+  background-color: #000000;
+}
+.castle .tower4 .wall .w2 img {
+  margin-left: 10px;
+  margin-bottom: 35px;
+  z-index: 3;
+}
+.castle .tower5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -110px;
+}
+.castle .tower5 .roof {
+  display: flex;
+  justify-content: space-around;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 135px solid #000000;
+}
+.castle .tower5 .roof .horn1.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 135px solid #000000;
+  border-right: 100px solid transparent;
+}
+.castle .tower5 .roof .horn2.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 135px solid #000000;
+  border-left: 100px solid transparent;
+}
+.castle .tower5 .flag {
+  position: relative;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-top: 90px solid transparent;
+  border-left: 270px solid #000000;
+  border-bottom: 90px solid transparent;
+}
+.castle .tower5 .shaft {
+  width: 15px;
+  height: 244px;
+  background: #000000;
+  margin-bottom: -10px;
+}
+.castle .tower5 .logo {
+  position: absolute;
+  right: 170px;
+  top: -40px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.castle .tower5 .logo.active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.castle .tower5 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 259px;
+  height: 298px;
+  background: #232323;
+}
+.castle .tower5 .wall .window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 65px;
+  display: flex;
+  background: #E1B000;
+}
+.castle .tower5 .wall .window img {
+  display: none;
+}
+.castle .tower5 .wall .w1.active {
+  border-radius: 50%;
+}
+.castle .tower6 {
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.castle .tower6 .battlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 250px;
+  height: 70px;
+}
+.castle .tower6 .battlement__big {
+  width: 50px;
+  height: 70px;
+  background: #000000;
+}
+.castle .tower6 .battlement__small {
+  width: 50px;
+  height: 30px;
+  background: #000000;
+}
+.castle .tower6 .wall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 210px;
+  height: 86px;
+  background: #000000;
+}
+.castle .tower6 .wall .window {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  background: #E1B000;
+  justify-content: flex-end;
+}
+.castle .tower6 .wall .window img {
+  display: none;
+}
+.castle .foundation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1395px;
+  max-height: 250px;
+  background: #000000;
+}
+.castle .foundation .door {
+  z-index: 3;
+}
+.castle .foundation .door img {
+  width: 100%;
+  height: 100%;
+}
+
+.castle__mobile {
+  display: none;
+}
+.castle__mobile .tower {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 -10px;
+}
+.castle__mobile .tower1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.castle__mobile .tower1 .battlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 140px;
+  height: 40px;
+}
+.castle__mobile .tower1 .battlement__big {
+  width: 28px;
+  height: 40px;
+  background: #000000;
+}
+.castle__mobile .tower1 .battlement__small {
+  width: 28px;
+  height: 17px;
+  background: #000000;
+}
+.castle__mobile .tower1 .wall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 120px;
+  height: 70px;
+  background: #000000;
+}
+.castle__mobile .tower1 .wall .window {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: #E1B000;
+  justify-content: flex-end;
+}
+.castle__mobile .tower1 .wall .window img {
+  display: none;
+}
+.castle__mobile .tower2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -135px;
+  margin-top: 7px;
+}
+.castle__mobile .tower2 .roof {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 130px solid #000000;
+}
+.castle__mobile .tower2 .roof .horn1.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 130px solid #000000;
+  border-right: 100px solid transparent;
+}
+.castle__mobile .tower2 .roof .horn2.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 130px solid #000000;
+  border-left: 100px solid transparent;
+}
+.castle__mobile .tower2 .roof .text {
+  position: absolute;
+  left: 50%;
+  top: 75px;
+  transform: translate(-50%);
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 140px;
+  text-align: center;
+}
+.castle__mobile .tower2 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  height: 657px;
+  background: #232323;
+}
+.castle__mobile .tower2 .wall .window {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background: #E1B000;
+  justify-content: center;
+}
+.castle__mobile .tower2 .wall .window img {
+  display: none;
+}
+.castle__mobile .tower2 .wall .w1.active {
+  background-color: #000000;
+}
+.castle__mobile .tower2 .wall .w2.active {
+  background-color: #000000;
+}
+.castle__mobile .tower2 .wall__foundation {
+  width: 240px;
+  height: 80px;
+  background: #232323;
+}
+.castle__mobile .tower4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -90px;
+  z-index: 2;
+}
+.castle__mobile .tower4 .roof {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 130px solid #000000;
+}
+.castle__mobile .tower4 .roof .pictogram {
+  margin-top: 50px;
+}
+.castle__mobile .tower4 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 243px;
+  height: 464px;
+  background: #000000;
+}
+.castle__mobile .tower4 .wall .window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #E1B000;
+}
+.castle__mobile .tower4 .wall .window img {
+  display: none;
+}
+.castle__mobile .tower4 .wall .window:nth-child(odd) {
+  margin-right: 76px;
+}
+.castle__mobile .tower4 .wall .window:nth-child(even) {
+  margin-left: 76px;
+}
+.castle__mobile .tower4 .wall .w1.active {
+  border-radius: 50%;
+}
+.castle__mobile .tower4 .wall .w2 img {
+  margin-left: 10px;
+  margin-bottom: 35px;
+  z-index: 3;
+}
+.castle__mobile .tower5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -90px;
+}
+.castle__mobile .tower5 .roof {
+  display: flex;
+  justify-content: space-around;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 110px solid #000000;
+}
+.castle__mobile .tower5 .roof .horn1.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 110px solid #000000;
+  border-right: 90px solid transparent;
+}
+.castle__mobile .tower5 .roof .horn2.active {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+  border-bottom: 110px solid #000000;
+  border-left: 90px solid transparent;
+}
+.castle__mobile .tower5 .flag {
+  position: relative;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 150px solid #000000;
+  border-bottom: 50px solid transparent;
+}
+.castle__mobile .tower5 .shaft {
+  width: 15px;
+  height: 130px;
+  background: #000000;
+  margin-bottom: -10px;
+}
+.castle__mobile .tower5 .logo {
+  position: absolute;
+  right: 100px;
+  top: -28px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.castle__mobile .tower5 .logo.active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.castle__mobile .tower5 .wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 238px;
+  height: 535px;
+  background: #232323;
+}
+.castle__mobile .tower5 .wall .window {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background: #E1B000;
+  justify-content: center;
+}
+.castle__mobile .tower5 .wall .window img {
+  display: none;
+}
+.castle__mobile .tower5 .wall .window img {
+  width: 80%;
+  height: 80%;
+}
+.castle__mobile .tower5 .wall .w1.active {
+  border-radius: 50%;
+}
+.castle__mobile .tower5 .wall .w3.active {
+  background: #000000;
+}
+.castle__mobile .tower5 .wall__foundation {
+  width: 238px;
+  height: 100px;
+  background: #232323;
+}
+.castle__mobile .tower6 {
+  margin-left: -130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.castle__mobile .tower6 .battlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 140px;
+  height: 40px;
+}
+.castle__mobile .tower6 .battlement__big {
+  width: 28px;
+  height: 40px;
+  background: #000000;
+}
+.castle__mobile .tower6 .battlement__small {
+  width: 28px;
+  height: 17px;
+  background: #000000;
+}
+.castle__mobile .tower6 .wall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 120px;
+  height: 70px;
+  background: #000000;
+}
+.castle__mobile .tower6 .wall .window {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: #E1B000;
+  justify-content: flex-end;
+}
+.castle__mobile .tower6 .wall .window img {
+  display: none;
+}
+.castle__mobile .foundation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 740px;
+  max-height: 150px;
+  background: #000000;
+}
+.castle__mobile .foundation .door__mobile {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.castle__mobile .foundation .door__mobile img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 769px) {
+  .castle .tower1 .battlement {
+    width: 240px;
+  }
+  .castle .tower1 .wall {
+    width: 200px;
+  }
+  .castle .tower2 .roof {
+    border-left: 209px solid transparent;
+    border-right: 209px solid transparent;
+  }
+  .castle .tower2 .wall {
+    width: 318px;
+    height: 476px;
+  }
+  .castle .tower3 .wall {
+    height: 331px;
+  }
+  .castle .tower4 .wall {
+    height: 437px;
+  }
+  .castle .tower5 .roof {
+    border-left: 152px solid transparent;
+    border-right: 152px solid transparent;
+  }
+  .castle .tower5 .wall {
+    width: 246px;
+    height: 271px;
+  }
+  .castle .tower6 .battlement {
+    width: 240px;
+  }
+  .castle .tower6 .wall {
+    width: 200px;
+  }
+  .castle .foundation .door img {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media only screen and (max-width: 1366px) and (min-width: 769px) {
+  .castle .tower1 .battlement {
+    width: 210px;
+  }
+  .castle .tower1 .wall {
+    width: 171px;
+  }
+  .castle .tower2 .roof {
+    border-left: 199px solid transparent;
+    border-right: 199px solid transparent;
+    border-bottom: 155px solid #000000;
+  }
+  .castle .tower2 .roof .text {
+    top: 90px;
+  }
+  .castle .tower2 .wall {
+    width: 280px;
+    height: 425px;
+    z-index: 1;
+  }
+  .castle .tower3 .roof {
+    border-left: 145px solid transparent;
+    border-right: 145px solid transparent;
+  }
+  .castle .tower3 .wall {
+    width: 230px;
+    height: 280px;
+  }
+  .castle .tower4 .roof {
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-bottom: 150px solid #000000;
+  }
+  .castle .tower4 .wall {
+    width: 280px;
+    height: 400px;
+  }
+  .castle .tower5 .roof {
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+  }
+  .castle .tower5 .flag {
+    border-top: 70px solid transparent;
+    border-left: 250px solid #000000;
+    border-bottom: 70px solid transparent;
+  }
+  .castle .tower5 .shaft {
+    height: 200px;
+  }
+  .castle .tower5 .logo {
+    right: 150px;
+  }
+  .castle .tower5 .wall {
+    width: 230px;
+    height: 257px;
+  }
+  .castle .tower6 {
+    margin-left: -90px;
+  }
+  .castle .tower6 .battlement {
+    width: 210px;
+  }
+  .castle .tower6 .wall {
+    width: 171px;
+  }
+  .castle .foundation .door {
+    height: 100%;
+  }
+  .castle .foundation .door img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 1210px) and (min-width: 769px) {
+  .castle .tower2 {
+    margin-left: -180px;
+  }
+  .castle .tower3 {
+    margin-left: -180px;
+  }
+  .castle .tower3 .roof {
+    border-left: 135px solid transparent;
+    border-right: 135px solid transparent;
+  }
+  .castle .tower3 .wall {
+    width: 215px;
+    height: 270px;
+  }
+  .castle .tower4 {
+    margin-left: -120px;
+  }
+  .castle .tower4 .roof {
+    border-left: 176px solid transparent;
+    border-right: 176px solid transparent;
+  }
+  .castle .tower4 .wall {
+    width: 270px;
+  }
+  .castle .tower5 .flag {
+    border-left: 210px solid #000000;
+  }
+  .castle .tower5 .logo {
+    right: 130px;
+  }
+  .castle .tower6 {
+    margin-left: -125px;
+  }
+}
+@media only screen and (max-width: 1014px) {
+  .castle {
+    display: none;
+  }
+
+  .castle__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 739px) {
+  .castle__mobile .tower1 .battlement {
+    width: 120px;
+    height: 30px;
+  }
+  .castle__mobile .tower1 .wall {
+    width: 100px;
+    height: 60px;
+  }
+  .castle__mobile .tower2 {
+    margin-left: -120px;
+  }
+  .castle__mobile .tower2 .roof {
+    border-left: 112px solid transparent;
+    border-right: 112px solid transparent;
+    border-bottom: 110px solid #000000;
+  }
+  .castle__mobile .tower2 .roof .horn1.active {
+    border-bottom: 110px solid #000000;
+    border-right: 70px solid transparent;
+  }
+  .castle__mobile .tower2 .roof .horn2.active {
+    border-bottom: 110px solid #000000;
+    border-left: 70px solid transparent;
+  }
+  .castle__mobile .tower2 .roof .text {
+    top: 70px;
+    font-size: 15px;
+    width: 130px;
+  }
+  .castle__mobile .tower2 .wall {
+    width: 190px;
+    height: 570px;
+  }
+  .castle__mobile .tower2 .wall .window {
+    width: 40px;
+    height: 40px;
+  }
+  .castle__mobile .tower2 .wall__foundation {
+    width: 200px;
+  }
+  .castle__mobile .tower4 {
+    margin-left: -110px;
+  }
+  .castle__mobile .tower4 .roof {
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 120px solid #000000;
+  }
+  .castle__mobile .tower4 .roof .pictogram {
+    margin-top: 40px;
+  }
+  .castle__mobile .tower4 .wall {
+    width: 120px;
+    height: 375px;
+  }
+  .castle__mobile .tower4 .wall .window img {
+    display: none;
+  }
+  .castle__mobile .tower4 .wall .window:nth-child(odd) {
+    margin-right: 0;
+  }
+  .castle__mobile .tower4 .wall .window:nth-child(even) {
+    margin-left: 0;
+  }
+  .castle__mobile .tower4 .wall .w4 {
+    display: none;
+  }
+  .castle__mobile .tower5 {
+    margin-left: -110px;
+  }
+  .castle__mobile .tower5 .roof {
+    border-left: 112px solid transparent;
+    border-right: 112px solid transparent;
+    border-bottom: 90px solid #000000;
+  }
+  .castle__mobile .tower5 .roof .horn1.active {
+    border-bottom: 90px solid #000000;
+    border-right: 70px solid transparent;
+  }
+  .castle__mobile .tower5 .roof .horn2.active {
+    border-bottom: 90px solid #000000;
+    border-left: 70px solid transparent;
+  }
+  .castle__mobile .tower5 .flag {
+    left: 10px;
+    border-top: 45px solid transparent;
+    border-left: 100px solid #000000;
+    border-bottom: 45px solid transparent;
+  }
+  .castle__mobile .tower5 .shaft {
+    width: 10px;
+  }
+  .castle__mobile .tower5 .logo {
+    right: 55px;
+  }
+  .castle__mobile .tower5 .wall {
+    width: 190px;
+    height: 435px;
+  }
+  .castle__mobile .tower5 .wall .window {
+    width: 40px;
+    height: 40px;
+  }
+  .castle__mobile .tower5 .wall__foundation {
+    width: 200px;
+  }
+  .castle__mobile .tower6 {
+    margin-left: -120px;
+  }
+  .castle__mobile .tower6 .battlement {
+    width: 120px;
+    height: 30px;
+  }
+  .castle__mobile .tower6 .wall {
+    width: 100px;
+    height: 60px;
+  }
+  .castle__mobile .foundation .door__mobile img {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 407px) {
+  .castle__mobile .tower2 .roof {
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 110px solid #000000;
+  }
+  .castle__mobile .tower2 .roof .horn1.active {
+    border-bottom: 110px solid #000000;
+    border-right: 60px solid transparent;
+  }
+  .castle__mobile .tower2 .roof .horn2.active {
+    border-bottom: 110px solid #000000;
+    border-left: 60px solid transparent;
+  }
+  .castle__mobile .tower2 .roof .text {
+    font-size: 13px;
+    width: 120px;
+  }
+  .castle__mobile .tower2 .wall {
+    width: 150px;
+    height: 435px;
+  }
+  .castle__mobile .tower2 .wall__foundation {
+    width: 170px;
+  }
+  .castle__mobile .tower4 {
+    margin-left: -100px;
+  }
+  .castle__mobile .tower4 .wall {
+    width: 120px;
+    height: 285px;
+  }
+  .castle__mobile .tower4 .wall .window {
+    width: 40px;
+    height: 40px;
+  }
+  .castle__mobile .tower5 {
+    margin-left: -100px;
+  }
+  .castle__mobile .tower5 .roof {
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 90px solid #000000;
+  }
+  .castle__mobile .tower5 .roof .horn1.active {
+    border-bottom: 90px solid #000000;
+    border-right: 60px solid transparent;
+  }
+  .castle__mobile .tower5 .roof .horn2.active {
+    border-bottom: 90px solid #000000;
+    border-left: 60px solid transparent;
+  }
+  .castle__mobile .tower5 .flag {
+    border-left: 90px solid #000000;
+  }
+  .castle__mobile .tower5 .logo {
+    right: 46px;
+  }
+  .castle__mobile .tower5 .wall {
+    width: 150px;
+    height: 315px;
+  }
+  .castle__mobile .tower5 .wall__foundation {
+    width: 170px;
+  }
+  .castle__mobile .foundation .door__mobile img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

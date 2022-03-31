@@ -1,0 +1,96 @@
+@mixin battlement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  .battlement {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 250px;
+    height: 70px;
+    &__big {
+      width: 50px;
+      height: 70px;
+      background: #000000;
+    }
+    &__small {
+      width: 50px;
+      height: 30px;
+      background: #000000;
+    }
+  }
+  .wall {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 210px;
+    height: 86px;
+    background: #000000;
+    .window {
+      width: 63px;
+      height: 63px;
+      @include window;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@mixin battlement_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  .battlement {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 140px;
+    height: 40px;
+    &__big {
+      width: 28px;
+      height: 40px;
+      background: #000000;
+    }
+    &__small {
+      width: 28px;
+      height: 17px;
+      background: #000000;
+    }
+  }
+  .wall {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 120px;
+    height: 70px;
+    background: #000000;
+    .window {
+      width: 40px;
+      height: 40px;
+      @include window;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@mixin tower {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin window {
+  display: flex;
+  background: #E1B000;
+  img {
+    display: none;
+  }
+}
+
+@mixin horn {
+  width: 0;
+  height: 0;
+  transition: all 500ms ease-in-out;
+}

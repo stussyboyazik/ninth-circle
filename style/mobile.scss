@@ -1,0 +1,250 @@
+@import "mixins";
+
+.castle__mobile {
+  display: none;
+  .tower {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 -10px;
+    &1 {
+      @include battlement_mobile;
+    }
+    &2 {
+      @include tower;
+      margin-left: -135px;
+      margin-top: 7px;
+      .roof {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 130px solid #000000;
+        .horn1 {
+          &.active {
+            @include horn;
+            border-bottom: 130px solid #000000;
+            border-right: 100px solid transparent;
+          }
+        }
+        .horn2 {
+          &.active {
+            @include horn;
+            border-bottom: 130px solid #000000;
+            border-left: 100px solid transparent;
+          }
+        }
+        .text {
+          position: absolute;
+          left: 50%;
+          top: 75px;
+          transform: translate(-50%);
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+          width: 140px;
+          text-align: center;
+        }
+      }
+      .wall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 240px;
+        height: 657px;
+        background: #232323;
+        .window {
+          width: 50px;
+          height: 50px;
+          @include window;
+          justify-content: center;
+        }
+        .w1 {
+          &.active {
+            background-color: #000000;
+          }
+        }
+        .w2 {
+          &.active {
+            background-color: #000000;
+          }
+        }
+      }
+      .wall__foundation {
+        width: 240px;
+        height: 80px;
+        background: #232323;
+      }
+    }
+    &4 {
+      @include tower;
+      margin-left: -90px;
+      z-index: 2;
+      .roof {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 130px solid #000000;
+        .pictogram {
+          margin-top: 50px;
+        }
+      }
+      .wall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 243px;
+        height: 464px;
+        background: #000000;
+        .window {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          background: #E1B000;
+          img {
+            display: none;
+          }
+          &:nth-child(odd) {
+            margin-right: 76px;
+          }
+          &:nth-child(even) {
+            margin-left: 76px;
+          }
+        }
+        .w1 {
+          &.active {
+            border-radius: 50%;
+          }
+        }
+        .w2 {
+          img {
+            margin-left: 10px;
+            margin-bottom: 35px;
+            z-index: 3;
+          }
+        }
+      }
+    }
+    &5 {
+      @include tower;
+      margin-left: -90px;
+      .roof {
+        display: flex;
+        justify-content: space-around;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 110px solid #000000;
+        .horn1 {
+          &.active {
+            @include horn;
+            border-bottom: 110px solid #000000;
+            border-right: 90px solid transparent;
+          }
+        }
+        .horn2 {
+          &.active {
+            @include horn;
+            border-bottom: 110px solid #000000;
+            border-left: 90px solid transparent;
+          }
+        }
+      }
+      .flag {
+        position: relative;
+        left: 15px;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-left: 150px solid #000000;
+        border-bottom: 50px solid transparent;
+      }
+      .shaft {
+        width: 15px;
+        height: 130px;
+        background: #000000;
+        margin-bottom: -10px;
+      }
+      .logo {
+        position: absolute;
+        right: 100px;
+        top: -28px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+        &.active {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .wall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 238px;
+        height: 535px;
+        background: #232323;
+        .window {
+          width: 50px;
+          height: 50px;
+          @include window;
+          justify-content: center;
+          img {
+            width: 80%;
+            height: 80%;
+          }
+        }
+        .w1 {
+          &.active {
+            border-radius: 50%;
+          }
+        }
+        .w3 {
+          &.active {
+            background: #000000;
+          }
+        }
+      }
+      .wall__foundation {
+        width: 238px;
+        height: 100px;
+        background: #232323;
+      }
+    }
+    &6 {
+      margin-left: -130px;
+      @include battlement_mobile;
+    }
+  }
+  .foundation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 740px;
+    max-height: 150px;
+    background: #000000;
+    .door__mobile {
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
